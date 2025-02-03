@@ -61,7 +61,20 @@ const data = {
             "tags": ["NLP", "LLM", "Transformers", "SQL"],
             "src": "text-sql.png",
             "mobileOrder": 4,
-            "desktopOrder": 4
+            "desktopOrder": 4,
+            "clickable": true,
+            "contributors": [
+                {
+                    "name": "Bharath Genji Mohana Ranga",
+                    "email": "bharathgenji.mohanaranga@gwu.edu",
+                }
+            ],
+            "links": {
+                "github": "https://github.com/mowzlisre/Final-Project-Group-Text-SQL",
+                "docs": "https://drive.google.com/file/d/1iIhtWgsL2KQTT9eNEoZNCAyl2tFx7Ffu/view?usp=sharing",
+                "ppt": "https://drive.google.com/file/d/1kufqOTTXQUIZUrRjxq8Ao85hrp2wIl50/view?usp=sharing"
+            }
+            
         },
         "neoport": {
             "title": "Neoport",
@@ -69,7 +82,17 @@ const data = {
             "tags": ["Neo4j", "Python", "Electron.js", "React.js", "Cypher"],
             "src": "neoport.png",
             "mobileOrder": 5,
-            "desktopOrder": 3
+            "desktopOrder": 3,
+            "clickable": true
+        },
+        "dmi": {
+            "title": "Django Model Inspector",
+            "desc": "Django Schema Inspector is a utility designed to inspect and expose metadata about Django models in a structured format. It provides a simple, configurable way to retrieve schema information for models across Django applications, with optional filtering by user-defined settings.",
+            "tags": ["Python", "PyPi"],
+            "src": "dmi.png",
+            "mobileOrder": 5,
+            "desktopOrder": 3,
+            "clickable": true
         },
         "nlpcc": {
             "title": "NLP Taxonomy Classfication",
@@ -77,7 +100,8 @@ const data = {
             "tags": ["NLP", "AWS", "Python", "React.js"],
             "src": "nlptaxonomy.png",
             "mobileOrder": 6,
-            "desktopOrder": 6
+            "desktopOrder": 6,
+            "clickable": true
         },
         "icm": {
             "title": "Image Classfication using CNN",
@@ -85,7 +109,8 @@ const data = {
             "tags": ["Image Classification", "CNN", "Python"],
             "src": "ICM.png",
             "mobileOrder": 7,
-            "desktopOrder": 7
+            "desktopOrder": 7,
+            "clickable": true
         },
         "pyspark": {
             "title": "Time Series Forecast using PySpark",
@@ -93,7 +118,8 @@ const data = {
             "tags": ["Research", "Big Data", "PySpark", "ARMA", "GCP"],
             "src": "pyspark.png",
             "mobileOrder": 8,
-            "desktopOrder": 8
+            "desktopOrder": 8,
+            "clickable": true
         },
         "tableau": {
             "title": "Visualization using Tableau",
@@ -101,7 +127,8 @@ const data = {
             "tags": ["Visualization", "Tableau"],
             "src": "tableau.png",
             "mobileOrder": 9,
-            "desktopOrder": 9
+            "desktopOrder": 9,
+            "clickable": true
         },
         "neovsmongo": {
             "title": "Neo4j vs. MongoDB - Research",
@@ -109,7 +136,8 @@ const data = {
             "tags": ["Research", "Neo4j", "MongoDB", "Python"],
             "src": "neovsmongo.png",
             "mobileOrder": 10,
-            "desktopOrder": 10
+            "desktopOrder": 10,
+            "clickable": true
         },
         "fooddesert": {
             "title": "EDA on Food Desert Dataset",
@@ -117,7 +145,8 @@ const data = {
             "tags": ["EDA", "R Programming"],
             "src": "fooddesert.png",
             "mobileOrder": 11,
-            "desktopOrder": 11
+            "desktopOrder": 11,
+            "clickable": true
         },
         "nyctaxi": {
             "title": "New York Taxi Trip Analysis",
@@ -125,7 +154,8 @@ const data = {
             "tags": ["Python", "Linear Regression", "XGBoost"],
             "src": "nyctaxi.png",
             "mobileOrder": 11,
-            "desktopOrder": 11
+            "desktopOrder": 11,
+            "clickable": true
         },
     }
 };

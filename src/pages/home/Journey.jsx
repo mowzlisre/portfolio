@@ -27,7 +27,7 @@ function Journey() {
                                     zIndex="1"
                                     position="relative"
                                 />
-                                <Button role="button" as={'flex'} gap={1} alignItems={"left"} whiteSpace="normal" flexDirection={"column"} width={"auto"} py={10} ml={2}>
+                                <Button role="button" gap={1} alignItems={"left"} whiteSpace="normal" flexDirection={"column"} width={"auto"} py={10} ml={2}>
                                     <Text fontWeight="bold" fontSize={10} color="blue.500">
                                         {item.year}
                                     </Text>
