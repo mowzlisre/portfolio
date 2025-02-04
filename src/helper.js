@@ -24,6 +24,8 @@ const colorSchemes = [
   "purple", "pink"
 ];
 
+export const fontSize = {base: "sm", lg: "md"}
+
 // Function to map a string to a color scheme
 export function getTagColorScheme(input) {
   let hash = 0;

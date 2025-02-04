@@ -3,9 +3,15 @@ import { getTagColorScheme } from "@/helper";
 import { Avatar, Box, Button, Center, Divider, Flex, Grid, GridItem, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Tag, TagLabel, Text, useDisclosure} from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import T2s from "../pages/Modals/T2s";
-import { IoLogoGithub } from "react-icons/io";
-import { IoDocumentTextOutline } from "react-icons/io5";
+import { IoLogoGithub, IoLogoWindows } from "react-icons/io";
+import { IoDocumentTextOutline, IoEarth, IoLogoApple } from "react-icons/io5";
 import { TbPresentationAnalytics } from "react-icons/tb";
+import { fontSize } from "../helper";
+import NeoPort from "../pages/Modals/Neoport";
+import { FcLinux } from "react-icons/fc";
+import DMI from "../pages/Modals/DMI";
+import { SiPypi } from "react-icons/si";
+import { AiOutlinePython } from "react-icons/ai";
 function ProjectCard({ data }) {
     const [imageSrc, setImageSrc] = useState("");
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,7 +25,9 @@ function ProjectCard({ data }) {
     }, [data.src]);
 
     const comps = {
-        "Text-to-SQL": <T2s/>
+        "Text-to-SQL": <T2s/>,
+        "Neoport": <NeoPort/>,
+        "Django Model Inspector": <DMI/>,
     }
 
     return (
@@ -27,13 +35,13 @@ function ProjectCard({ data }) {
             <GlowCard _group>
                 <Image src={imageSrc} alt={data.title || "Project Image"} />
                 <Flex direction={'column'} p={5} gap={2}>
-                    <Text fontSize={'xs'} textAlign={"justify"}>
+                    <Text fontSize={fontSize} textAlign={"justify"}>
                         {data.desc}
                     </Text>
-                    <Flex mt={2} gap={2}>
+                    <Flex mt={2} gap={2} flexWrap={"wrap"}>
                         {data.tags.map((el, index) => (
-                            <Tag whiteSpace={'nowrap'} borderRadius={"20px"} key={index}
-                                fontSize={'xs'} colorScheme={getTagColorScheme(el)}>
+                            <Tag px={{base: "3", xl: "4"}} py={{base: "2", xl: "2"}} whiteSpace={'nowrap'} borderRadius={"20px"} key={index}
+                                fontSize={{base: "xs", xl: "sm"}} colorScheme={getTagColorScheme(el)}>
                                 {el}
                             </Tag>
                         ))}
@@ -41,7 +49,7 @@ function ProjectCard({ data }) {
                     {
                         data.clickable &&
                         <Flex mt={2} justifyContent={'end'}>
-                            <Button size={'xs'} onClick={onOpen}>More</Button>
+                            <Button size={fontSize} onClick={onOpen}>More</Button>
                         </Flex>
 
                     }
@@ -52,7 +60,7 @@ function ProjectCard({ data }) {
                 <ModalOverlay />
                 <ModalContent>
                     <ModalCloseButton />
-                    <ModalBody p={20}>
+                    <ModalBody p={20} px={{xl: "20%"}}>
                         <Grid templateColumns={{ base: "1fr", md: "1fr 0 4fr" }} gap={5}>
                             <GridItem position={'sticky'} top="15" height="100vh" overflowY="auto">
                                 <Flex direction="column" gap={4} p={3}>
@@ -93,6 +101,36 @@ function ProjectCard({ data }) {
                                             }
                                             {
                                                 data.links &&
+                                                data.links.pypi && (
+                                                    <Tag 
+                                                        size='lg' 
+                                                        borderRadius='full' 
+                                                        onClick={() => window.open(data.links.pypi, "_blank")}
+                                                        cursor="pointer"
+                                                        colorScheme="yellow"
+                                                    >
+                                                        <AiOutlinePython />
+                                                        <TagLabel ml={2} fontSize={'xs'}>PyPI</TagLabel>
+                                                    </Tag>
+                                                )
+                                            }
+                                            {
+                                                data.links &&
+                                                data.links.website && (
+                                                    <Tag 
+                                                        size='lg' 
+                                                        borderRadius='full' 
+                                                        onClick={() => window.open(data.links.website, "_blank")}
+                                                        cursor="pointer"
+                                                        colorScheme="purple"
+                                                    >
+                                                        <IoEarth />
+                                                        <TagLabel ml={2} fontSize={'xs'}>Website</TagLabel>
+                                                    </Tag>
+                                                )
+                                            }
+                                            {
+                                                data.links &&
                                                 data.links.docs && (
                                                     <Tag 
                                                         size='lg' 
@@ -117,7 +155,52 @@ function ProjectCard({ data }) {
                                                         colorScheme="orange"
                                                     >
                                                         <TbPresentationAnalytics />
-                                                        <TagLabel ml={2} fontSize={'xs'}>Ppt</TagLabel>
+                                                        <TagLabel ml={2} fontSize={'xs'}>PPT</TagLabel>
+                                                    </Tag>
+                                                )
+                                            }
+                                            {
+                                                data.links &&
+                                                data.links.windows && (
+                                                    <Tag 
+                                                        size='lg' 
+                                                        borderRadius='full' 
+                                                        onClick={() => window.open(data.links.windows, "_blank")}
+                                                        cursor="pointer"
+                                                        colorScheme="black"
+                                                    >
+                                                        <IoLogoWindows />
+                                                        <TagLabel ml={2} fontSize={'xs'}>Windows</TagLabel>
+                                                    </Tag>
+                                                )
+                                            }
+                                            {
+                                                data.links &&
+                                                data.links.mac && (
+                                                    <Tag 
+                                                        size='lg' 
+                                                        borderRadius='full' 
+                                                        onClick={() => window.open(data.links.mac, "_blank")}
+                                                        cursor="pointer"
+                                                        colorScheme="black"
+                                                    >
+                                                        <IoLogoApple />
+                                                        <TagLabel ml={2} fontSize={'xs'}>MacOS</TagLabel>
+                                                    </Tag>
+                                                )
+                                            }
+                                            {
+                                                data.links &&
+                                                data.links.linux && (
+                                                    <Tag 
+                                                        size='lg' 
+                                                        borderRadius='full' 
+                                                        onClick={() => window.open(data.links.linux, "_blank")}
+                                                        cursor="pointer"
+                                                        colorScheme="black"
+                                                    >
+                                                        <FcLinux />
+                                                        <TagLabel ml={2} fontSize={'xs'}>Linux</TagLabel>
                                                     </Tag>
                                                 )
                                             }

@@ -31,7 +31,7 @@ function Journey() {
                                     <Text fontWeight="bold" fontSize={10} color="blue.500">
                                         {item.year}
                                     </Text>
-                                    <Text fontSize="xs" fontWeight="semibold">
+                                    <Text fontSize={{base: "xs", xl: "md"}} fontWeight="semibold">
                                         {item.title}
                                     </Text>
                                     <Text fontSize={10} color="gray.500">

@@ -1,3 +1,9 @@
+function selfContrib(){
+    return {
+        "name": "Mowzli Sre Mohan Dass",
+        "email": "mowzlisre.mohandass@gwu.edu"
+    }
+}
 const data = {
     "name": "Mowzli Sre Mohan Dass",
     "main": {
@@ -15,7 +21,7 @@ const data = {
                 "desc": "I'm a Data Scientist and Developer who loves turning messy data into meaningful stories and building cool apps that actually work! When I'm not debugging code, I'm probably debugging my coffee machine or teaching algorithms how to dance 🕺",
             },
             "mobileOrder": 2,
-            "desktopOrder": 5
+            "desktopOrder": 2
         },
         "misc": {
             "desc": "This portfolio is more than just a display of my technical expertise as a Data Scientist and Developer—it's a reflection of my life, blending my passion for coding with my love for poetry, photography, and other creative pursuits. Here, you'll discover not only the projects I've built but also the stories, moments, and inspirations that shape who I am.",
@@ -67,7 +73,8 @@ const data = {
                 {
                     "name": "Bharath Genji Mohana Ranga",
                     "email": "bharathgenji.mohanaranga@gwu.edu",
-                }
+                },
+                selfContrib()        
             ],
             "links": {
                 "github": "https://github.com/mowzlisre/Final-Project-Group-Text-SQL",
@@ -83,7 +90,17 @@ const data = {
             "src": "neoport.png",
             "mobileOrder": 5,
             "desktopOrder": 3,
-            "clickable": true
+            "clickable": true,
+            "contributors": [
+                selfContrib()        
+            ],
+            "links": {
+                "github": "https://github.com/mowzlisre/neoport",
+                "windows": "https://github.com/mowzlisre/neopor",
+                "mac": "https://github.com/mowzlisre/neopor",
+                "linux": "https://github.com/mowzlisre/neopor",
+                "website": "https://github.com/mowzlisre/neopor"
+            }
         },
         "dmi": {
             "title": "Django Model Inspector",
@@ -92,7 +109,14 @@ const data = {
             "src": "dmi.png",
             "mobileOrder": 5,
             "desktopOrder": 3,
-            "clickable": true
+            "clickable": true,
+            "contributors": [
+                selfContrib()        
+            ],
+            "links": {
+                "github": "https://github.com/mowzlisre/django-model-inspector",
+                "pypi": "https://pypi.org/project/django-model-inspector/"
+            }
         },
         "nlpcc": {
             "title": "NLP Taxonomy Classfication",
@@ -159,5 +183,6 @@ const data = {
         },
     }
 };
+
 
 export default data;

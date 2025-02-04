@@ -20,10 +20,10 @@ function ProfileCard(){
                     borderColor={borderColor}
                 />
                 <Flex justifyContent={"center"}>
-                    <Button variant={'ghost'} as={"a"} size={"sm"} href={`tel:${data.main.profile.phone}`} target="_blank" colorScheme="gray"><IoCall /></Button>
-                    <Button variant={'ghost'} as={"a"} size={"sm"} href={`mailto:${data.main.profile.mail}`} target="_blank" colorScheme="gray"><MdAlternateEmail /></Button>
-                    <Button variant={'ghost'} as={"a"} size={"sm"} href={`${data.main.profile.linkedin}`} target="_blank" colorScheme="gray"><FaLinkedinIn /></Button>
-                    <Button variant={'ghost'} as={"a"} size={"sm"} href={`${data.main.profile.github}`} target="_blank" colorScheme="gray"><LuGithub /></Button>
+                    <Button variant={'ghost'} as={"a"} href={`tel:${data.main.profile.phone}`} target="_blank" colorScheme="gray"><IoCall /></Button>
+                    <Button variant={'ghost'} as={"a"} href={`mailto:${data.main.profile.mail}`} target="_blank" colorScheme="gray"><MdAlternateEmail /></Button>
+                    <Button variant={'ghost'} as={"a"} href={`${data.main.profile.linkedin}`} target="_blank" colorScheme="gray"><FaLinkedinIn /></Button>
+                    <Button variant={'ghost'} as={"a"} href={`${data.main.profile.github}`} target="_blank" colorScheme="gray"><LuGithub /></Button>
                 </Flex>
             </Box>
         </GlowCard>

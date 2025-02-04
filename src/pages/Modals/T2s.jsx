@@ -6,6 +6,7 @@ function T2s (){
     return (
         <>
             <Text fontSize={'4xl'} fontWeight={'bold'}>Teaching a Machine to Speak SQL</Text>
+            <Text fontStyle={"italic"}>~ Mowzli Sre Mohan Dass</Text>
             <Text>
                 So, imagine you're in a world where databases speak in a cryptic language called SQL, and most people… well, they don’t. You just want to ask a simple question like, <i>“Hey, how many people bought coffee yesterday?”</i> But instead, the database stares at you blankly, waiting for some ancient spell like:
             </Text>

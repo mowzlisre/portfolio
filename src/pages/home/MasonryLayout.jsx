@@ -22,8 +22,8 @@ const MasonryLayout = () => {
 
     
 
-    const isMobile = useBreakpointValue({ base: true, lg: false });
-    const columnCount = useBreakpointValue({ base: 1, md: 2, lg: 4 });
+    const isMobile = useBreakpointValue({ base: true, md: false });
+    const columnCount = useBreakpointValue({ base: 1, md: 2, lg: 3, xl: 3, "2xl": 4 });
 
     // Sort items based on mobile or desktop order
     const sortedItems = [...items].sort((a, b) =>
@@ -43,8 +43,8 @@ const MasonryLayout = () => {
         <Box
             display="flex"
             gap="16px"
-            px={{ base: 5, lg: 10 }}
-            py={{ base: 5, lg: 5 }}
+            px={{ base: 3, lg: 10, xl: 10, "2xl": "10%"}}
+            py={{ base: 3, lg: 5 }}
         >
             {columns.map((column, colIndex) => (
                 <VStack
