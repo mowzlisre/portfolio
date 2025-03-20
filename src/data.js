@@ -12,21 +12,6 @@ const data = {
             "mail": "mowzlisre.mohandass@gwu.edu",
             "linkedin": "https://www.linkedin.com/in/mowzlisremohandass/",
             "github": "https://github.com/mowzlisre",
-            "mobileOrder": 1,
-            "desktopOrder": 1
-        },
-        "about": {
-            "card": {
-                "main": "Hi, I'm Mowzli!",
-                "desc": "I'm a Data Scientist and Developer who loves turning messy data into meaningful stories and building cool apps that actually work! When I'm not debugging code, I'm probably debugging my coffee machine or teaching algorithms how to dance 🕺",
-            },
-            "mobileOrder": 2,
-            "desktopOrder": 2
-        },
-        "misc": {
-            "desc": "This portfolio is more than just a display of my technical expertise as a Data Scientist and Developer—it's a reflection of my life, blending my passion for coding with my love for poetry, photography, and other creative pursuits. Here, you'll discover not only the projects I've built but also the stories, moments, and inspirations that shape who I am.",
-            "mobileOrder": 3,
-            "desktopOrder": 2
         },
         "journey": {
             "timeline": [
@@ -56,9 +41,16 @@ const data = {
                     "desc": "At SkillSafari, Chennai" 
                 }
             ],
+            "mobileOrder": 1,
+            "desktopOrder": 1,
+            "pages": ['home']
+        },
+        "misc": {
+            "desc": "This portfolio is more than just a display of my technical expertise as a Data Scientist and Developer—it's a reflection of my life, blending my passion for coding with my love for poetry, photography, and other creative pursuits. Here, you'll discover not only the projects I've built but also the stories, moments, and inspirations that shape who I am.",
             "mobileOrder": 2,
-            "desktopOrder": 5
-        }
+            "desktopOrder": 2,
+            "pages": ['home']
+        },
     },
     "projects": {
         "textsql": {
@@ -80,8 +72,8 @@ const data = {
                 "github": "https://github.com/mowzlisre/Final-Project-Group-Text-SQL",
                 "docs": "https://drive.google.com/file/d/1iIhtWgsL2KQTT9eNEoZNCAyl2tFx7Ffu/view?usp=sharing",
                 "ppt": "https://drive.google.com/file/d/1kufqOTTXQUIZUrRjxq8Ao85hrp2wIl50/view?usp=sharing"
-            }
-            
+            },
+            "pages": ['home', 'project']
         },
         "neoport": {
             "title": "Neoport",
@@ -100,7 +92,8 @@ const data = {
                 "mac": "https://github.com/mowzlisre/neopor",
                 "linux": "https://github.com/mowzlisre/neopor",
                 "website": "https://github.com/mowzlisre/neopor"
-            }
+            },
+            "pages": ['home', 'project', 'open']
         },
         "dmi": {
             "title": "Django Model Inspector",
@@ -116,7 +109,8 @@ const data = {
             "links": {
                 "github": "https://github.com/mowzlisre/django-model-inspector",
                 "pypi": "https://pypi.org/project/django-model-inspector/"
-            }
+            },
+            "pages": ['home', 'project', 'open']
         },
         "nlpcc": {
             "title": "NLP Taxonomy Classfication",
@@ -125,7 +119,8 @@ const data = {
             "src": "nlptaxonomy.png",
             "mobileOrder": 6,
             "desktopOrder": 6,
-            "clickable": true
+            "clickable": true,
+            "pages": ['home', 'project']
         },
         "icm": {
             "title": "Image Classfication using CNN",
@@ -134,7 +129,8 @@ const data = {
             "src": "ICM.png",
             "mobileOrder": 7,
             "desktopOrder": 7,
-            "clickable": true
+            "clickable": true,
+            "pages": ['home', 'project']
         },
         "pyspark": {
             "title": "Time Series Forecast using PySpark",
@@ -143,7 +139,8 @@ const data = {
             "src": "pyspark.png",
             "mobileOrder": 8,
             "desktopOrder": 8,
-            "clickable": true
+            "clickable": true,
+            "pages": ['home', 'project']
         },
         "tableau": {
             "title": "Visualization using Tableau",
@@ -152,7 +149,8 @@ const data = {
             "src": "tableau.png",
             "mobileOrder": 9,
             "desktopOrder": 9,
-            "clickable": true
+            "clickable": true,
+            "pages": ['home', 'project']
         },
         "neovsmongo": {
             "title": "Neo4j vs. MongoDB - Research",
@@ -161,7 +159,8 @@ const data = {
             "src": "neovsmongo.png",
             "mobileOrder": 10,
             "desktopOrder": 10,
-            "clickable": true
+            "clickable": true,
+            "pages": ['home', 'project']
         },
         "fooddesert": {
             "title": "EDA on Food Desert Dataset",
@@ -170,7 +169,8 @@ const data = {
             "src": "fooddesert.png",
             "mobileOrder": 11,
             "desktopOrder": 11,
-            "clickable": true
+            "clickable": true,
+            "pages": ['home', 'project']
         },
         "nyctaxi": {
             "title": "New York Taxi Trip Analysis",
@@ -179,7 +179,8 @@ const data = {
             "src": "nyctaxi.png",
             "mobileOrder": 11,
             "desktopOrder": 11,
-            "clickable": true
+            "clickable": true,
+            "pages": ['home', 'project']
         },
     }
 };

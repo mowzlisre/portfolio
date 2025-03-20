@@ -7,6 +7,7 @@ function Misc() {
         <GlowCard _group>
             <Box p={5}>
                 <Flex direction={'column'} gap={2}>
+                    <Text fontWeight={"bold"} fontSize={"2xl"}>Know about me</Text>
                     <Text fontSize={fontSize} textAlign={"justify"}>
                         {data.main.misc.desc}
                     </Text>

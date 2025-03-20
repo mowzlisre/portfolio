@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import LoadingScreen from "../../components/LoadingScreen";
 import Navbar from "../../components/Navbar";
 import MasonryLayout from "./MasonryLayout";
+import LandingComp from "./LandingComp";
+import Carousel from "./Carousel";
+import Marquee from "../../components/Marquee";
 export const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
 
@@ -20,7 +23,8 @@ export const Home = () => {
     return (
         <>
             <Navbar />
-            
+            <LandingComp/>
+            <Marquee/>
             <MasonryLayout/>
         </>
     );

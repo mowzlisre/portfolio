@@ -20,14 +20,14 @@ function Journey() {
                 
                     <VStack align="start" spacing={4}>
                         {data.main.journey.timeline.map((item, index) => (
-                            <Flex key={index} align="center" width={"auto"} position="relative">
+                            <Flex key={index} align="center" position="relative">
                                 <Circle
                                     size="12px"
                                     bg="blue.500"
                                     zIndex="1"
                                     position="relative"
                                 />
-                                <Button role="button" gap={1} alignItems={"left"} whiteSpace="normal" flexDirection={"column"} width={"auto"} py={10} ml={2}>
+                                <Button role="button" gap={1} alignItems={"left"} whiteSpace="normal" flexDirection={"column"} py={10} ml={2}>
                                     <Text fontWeight="bold" fontSize={10} color="blue.500">
                                         {item.year}
                                     </Text>
